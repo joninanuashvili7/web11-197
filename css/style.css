@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    background-color: rgb(138, 81, 190);
+}
+:root {
+    --maincolor-color: darkgrey;
+    --secondarycolor-color: rgb(189, 58, 58);
+    --Border-border: 2px dotted black;
+}
+/* Header Style's */
+.Header-Box {
+    width: 100%;
+    height: 250px;
+    border: 2px dotted black;
+    /* Grid */
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 12px;
+}
+    .Header-Title {
+        width: auto;
+        border:var(--Border-border);
+        background-color: var(--maincolor-color);
+        border-radius: 15px;
+        text-align: center;
+        display: grid;
+        grid-template-rows:  5fr 2fr;
+    }
+        .Header-Title-Maintext {
+            background-color: var(--secondarycolor-color)
+        }
+    .Header-Logo {
+        border:var(--Border-border);
+        background-color: var(--maincolor-color);
+        text-align: center;
+    } 
+  /* Main Style's */
+  .Section1-Languages {
+    width: 100%;
+    margin-top: 60px;
+    background-color: var(--maincolor-color);
+    border: var(--Border-border);
+    border-radius: 60px;
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+    }
+    .language-item {
+        border: var(--Border-border);
+        background-color: brown;
+        border-radius: 100%;
+    }
+/* Section 2 */
+.Section2 {
+    margin-top: 60px;
+    width: 100%;
+    height: 350px;
+    background-color: var(--maincolor-color);
+    /* Grid */
+    display: grid;
+    grid-template-columns: 35% 65%;
+    place-items: center;
+}
+/* Footer */
+.Footer {
+    width: 100%;
+    margin-top: 15px;
+    height: 75px;
+    background-color: rgb(79, 146, 206);
+    display: grid;
+    grid-template-columns: 35px 60px 55px;
+    justify-content: space-around;
+    place-items: center;
+}
